@@ -1,5 +1,10 @@
 
 @font-face {
+  font-family: poppinsSemiBold;
+  src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
   font-family: poppinsMedium;
   src: url(fonts/Poppins-Medium.ttf);
 }
@@ -9,10 +14,14 @@
   src: url(fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: poppinsLight;
+  src: url(fonts/Poppins-Light.ttf);
+}
+
 * {
 	font-family: poppinsRegular;
 }
-
 
 .homeWrapper {
 	position:fixed;
@@ -37,12 +46,16 @@
 .heroText{
 	font-size: 28px;
 	color: #111111;
-	font-family: poppinsMedium;
+	font-family: poppinsSemiBold;
 }
 
 .descriptionText{
 	font-size: 16px;
 	color: #303030;
+}
+
+.readMore {
+	color: #AB1A25;
 }
 
 .explorePadding {
@@ -51,6 +64,7 @@
 }
 
 .exploreBtn {
+	height: 30px;
 	color: #fff;
 	font-size: 18px;
 	background-color: #564F9F;
@@ -73,4 +87,12 @@
 
 .socials a {
 	padding: 1px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
 }
