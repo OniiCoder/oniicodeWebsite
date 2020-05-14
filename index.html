@@ -3,12 +3,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/style.css" >
-	<script type="text/javascript" src="assets/app.js"></script>
+	
 </head>
 <body>
 
 	<!-- home view -->
-  <div class="homeWrapper hide">
+  <div class="homeWrapper .hide">
   	<div class="home">
   	<div class="heroFace">
   		<!-- <img src="assets/img/oniicode-face.svg"/> -->
@@ -43,7 +43,7 @@
   <!-- end of home view -->
 
   <!-- about view -->
-  <div class="aboutWrapper">
+  <div class="aboutWrapper hide">
   	<div class="about">
   		<header id="myHeader" class="aboutHeader">
   			<img src="assets/img/oniicode-face.svg" />
@@ -75,25 +75,7 @@
   </div>
   <!-- end of about view -->
 
-
-
-
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
+<script type="text/javascript" src="assets/app.js"></script>
 </body>
 
 
