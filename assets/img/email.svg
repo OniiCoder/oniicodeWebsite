@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.75" height="31" viewBox="0 0 38.75 31">
+  <g id="write-email-envelope-button" transform="translate(0 -51)">
+    <g id="mail" transform="translate(0 51)">
+      <path id="Path_2" data-name="Path 2" d="M34.875,51h-31A3.886,3.886,0,0,0,0,54.875v23.25A3.886,3.886,0,0,0,3.875,82h31a3.886,3.886,0,0,0,3.875-3.875V54.875A3.886,3.886,0,0,0,34.875,51Zm0,7.75-15.5,9.688L3.875,58.75V54.875l15.5,9.688,15.5-9.688Z" transform="translate(0 -51)" fill="#564f9f"/>
+    </g>
+  </g>
+</svg>
