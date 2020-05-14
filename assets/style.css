@@ -23,8 +23,8 @@
 	font-family: poppinsRegular;
 }
 
-.body{
-	overflow-x: hidden;
+body{
+	overflow-x: hidden !important;
 }
 
 .homeWrapper {
