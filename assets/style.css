@@ -1,5 +1,10 @@
 
 @font-face {
+  font-family: poppinsBold;
+  src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
   font-family: poppinsSemiBold;
   src: url(fonts/Poppins-SemiBold.ttf);
 }
@@ -25,6 +30,7 @@
 
 body{
 	overflow-x: hidden !important;
+	margin: 0;
 }
 
 .homeWrapper {
@@ -97,3 +103,85 @@ body{
 .show {
 	display: block;
 }
+
+.aboutWrapper {
+	width: 100%;
+
+}
+
+.about {
+	padding: 20px;
+	/*width: 100%;*/
+}
+
+.aboutHeader {
+	/*width: 100%;*/
+	/*top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;*/
+	/*background-color: #fff;*/
+	display: flex;
+	justify-content: space-between;
+	/*position: sticky;*/
+}
+
+.aboutHeader img {
+	width: 39px;
+}
+
+.btnContainer {
+	width: 170px;
+}
+
+.portfolioBtn {
+	height: 30px;
+	color: #fff;
+	font-size: 18px;
+	background-color: #564F9F;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	display: flex;
+   	align-items:center;
+}
+
+.aboutImage {
+	height: 300px;
+	width: 100%;
+	background-color: #000;
+	border-radius: 6px;
+	background-image: url('img/oniicode-face2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.title {
+	font-family: poppinsBold;
+	font-size: 20px;
+	color: #111111;
+}
+
+.about p {
+	color: #303030;
+	font-size: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+

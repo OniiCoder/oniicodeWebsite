@@ -8,7 +8,7 @@
 <body>
 
 	<!-- home view -->
-  <div class="homeWrapper">
+  <div class="homeWrapper hide">
   	<div class="home">
   	<div class="heroFace">
   		<!-- <img src="assets/img/oniicode-face.svg"/> -->
@@ -42,8 +42,59 @@
   </div>
   <!-- end of home view -->
 
+  <!-- about view -->
+  <div class="aboutWrapper">
+  	<div class="about">
+  		<header id="myHeader" class="aboutHeader">
+  			<img src="assets/img/oniicode-face.svg" />
+  			<div class="btnContainer">
+  				<a href="#" class="portfolioBtn">
+			  		<span>SEE PORTFOLIO</span>
+			  	</a>
+  			</div>
+  		</header>
+  		<div style="height: 65px"></div>
+  		<div class="aboutImage"></div>
+  		<div style="height: 36px"></div>
+  		<span class="title">About Me (Introduction)</span>
+  		<p>My name is Peter Oniisha Peregbakumo, I’m experienced with all stages of the development cycle for dynamic web and mobile applications - having an in-depth knowledge in Flutter & Dart and also including advanced HTML5, CSS, JavaScript, PHP, and Laravel.</p>
+
+		<p>In addition to my Computer Science background, I also possess a strong background in management, leadership and on the design end of things; I’m very  familiar with design tools such as Figma, Adobe XD, and Photoshop.</p>
+
+		<p>In my free time, you would find me driving, swimming, playing table tennis or 8 ball pool with friends or making music… oh yeah! I make music, haha.</p>
+
+		<div style="height: 20px"></div>
+  		<span class="title">Want to know more about my Experience, education and Companies have worked with?</span>
+  		<p>Checkout my LinkedIn and Resume:</p>
+	  	<a href="#" class="letsTalk">Visit LinkedIn Profile</a>
+	  	<div style="height: 10px"></div>
+	  	<a href="#" class="letsTalk">View Resume/CV</a>
+  		<div style="height: 40px"></div>
+
+  	</div>
+  </div>
+  <!-- end of about view -->
 
 
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
+
+
 </html>
