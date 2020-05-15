@@ -1,3 +1,5 @@
+AOS.init();
+
 window.onload = function firstThing() {
 	//sections
 	var home = document.getElementById("home");
