@@ -43,15 +43,15 @@
   <!-- end of home view -->
 
   <!-- about view -->
-  <div id="about" class="aboutWrapper">
+  <div id="about" class="aboutWrapper .hide">
   	<div class="about">
   		<header id="myHeader" class="aboutHeader">
   			<div style="flex-grow: 8">
   				<img id="logoImage" src="assets/img/oniicode-face.svg" />
   			</div>
   			<div style="flex-grow: 2">
-  				<a href="#" class="portfolioBtn">
-			  		<span>SEE PORTFOLIO</span>
+  				<a onclick="changePage('portfolio')" class="portfolioBtn">
+			  		<span style="flex-grow: 10">SEE PORTFOLIO</span>
 			  	</a>
   			</div>
   		</header>
@@ -76,6 +76,48 @@
   	</div>
   </div>
   <!-- end of about view -->
+
+  <!-- portfolio view -->
+  <div id="portfolio" class="aboutWrapper .hide">
+  	<div class="about">
+  		<header id="myHeader2" class="aboutHeader">
+  			<div style="flex-grow: 8">
+  				<img id="logoImage2" src="assets/img/oniicode-face.svg" />
+  			</div>
+  			<div style="flex-grow: 2">
+  				<a onclick="changePage('about')" class="portfolioBtn">
+			  		<span style="flex-grow: 10">ABOUT ME</span>
+			  	</a>
+  			</div>
+  		</header>
+
+  		<div style="height: 20px"></div>
+
+  		<div class="PortfolioCard">
+	  		<div class="portfolioImage" style="background-image: url('assets/img/learncode.jpg');"></div>
+	  		<div class="card-content">
+	  			<span class="portfolioTitle">UI Design to Flutter App</span>
+		  		<div style="height: 6px"></div>
+				<span class="portfolioDescriptionText">Came across this design by adecancode on Twitter and I implemented it using Flutter.</span>
+	  		</div>
+  		</div>
+
+  		<div style="height: 36px"></div>
+  		<div class="PortfolioCard">
+	  		<div class="portfolioImage" style="background-image: url('assets/img/houzhold.jpg');"></div>
+	  		<div class="card-content">
+	  			<span class="portfolioTitle">Household Mobile App</span>
+		  		<div style="height: 6px"></div>
+				<span class="portfolioDescriptionText">Developing a fully Interactive prototype for managing household debts and shopping Lists.</span>
+	  		</div>
+  		</div>
+
+
+  		
+
+  	</div>
+  </div>
+  <!-- end of portfolio view -->
 
 <script type="text/javascript" src="assets/app.js"></script>
 </body>
