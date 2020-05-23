@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
 <head>
+
 	
 	<meta name="author" content="OniiCode">
 	<meta name="keywords" content="oniicode, Flutter Developer, Software Developer, software, Web Developer Nigeria, Nigerian developer">
@@ -29,148 +30,940 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/style.css" >
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jarallax.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/swiper.css" />
+	<link rel="stylesheet" href="css/fontawesome.css" />
+
+	<!-- Theme Colors
+	<link rel="stylesheet" href="css/theme-colors/blue.css" />
+	<link rel="stylesheet" href="css/theme-colors/green.css" />
+	<link rel="stylesheet" href="css/theme-colors/orange.css" />
+	<link rel="stylesheet" href="css/theme-colors/brown.css" />
+	<link rel="stylesheet" href="css/theme-colors/purple.css" />
+	<link rel="stylesheet" href="css/theme-colors/red.css" />
+	<link rel="stylesheet" href="css/theme-colors/beige.css" />
+	<link rel="stylesheet" href="css/theme-colors/green_light.css" />
+	<link rel="stylesheet" href="css/theme-colors/yellow.css" />
+	<link rel="stylesheet" href="css/theme-colors/yellow_light.css" />
+	-->
+		
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+
 </head>
-<body>
 
-	<!-- home view -->
-  <div id="home" class="homeWrapper .hide">
-  	<div class="home">
-  	<div class="heroFace" data-aos="fade-up" data-aos-duration="3000">
-  		<!-- <img src="assets/img/oniicode-face.svg"/> -->
-  		<img src="assets/img/face.gif" width="250px" />
-  	</div>
+<body class="home">
 
-  	<div class="heroText" data-aos="fade-up" data-aos-duration="3000">Hi. I'm OniiCode,</div>
-  	<div style="height: 8px"></div>
-  	<div class="descriptionText" data-aos="fade-up" data-aos-duration="3000">
-  		<span>a mobile and web developer open to contract, Part-time or Full-time opportunities.</span>
-  	</div>
-  	<div style="height: 23px"></div>
-  	<div style="height: 23px"></div>
-  	<div style="height: 23px"></div>
-  	<div class="explorePadding">
-  		<a id="exploreBtn" class="exploreBtn" data-aos="fade-up" data-aos-duration="4000">
-	  		<span>Explore portfolio</span> &nbsp; &nbsp;<img src="assets/img/right-arrow-forward.svg"/>
-	  	</a>
-	  	<div style="height: 24px"></div>
-	  	<a id="getToKnowMe" class="letsTalk">Get to know me more</a>
-  	</div>
-  	<div style="height: 24px"></div>
-  	<div class="socials">
-  		<a href="https://www.linkedin.com/in/peter-onisha-peregbakumo-526a34152" target="_blank"><img src="assets/img/linkedin-logo.svg"/></a>
-  		<a href="mailto:perezpeter32@gmail.com"><img src="assets/img/email.svg"/></a>
-  		<a href="https://www.twitter.com/oniicode" target="_blank"><img src="assets/img/twitter-logo.svg"/></a>
+	<!-- Preloader -->
+	<!-- <div class="preloader">
+		<div class="box-1">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="lines"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box-2"></div>
+	</div> -->
+	
+	<!-- Container -->
+	<div class="container">
+	
+		<!-- Header -->
+		<header class="header">
 
-  	</div>
-  	<div style="height: 50px"></div>
-  </div>
-  </div>
-  <!-- end of home view -->
+			<!-- logo -->
+			<div class="logo">
+				<a href="#">
+					<img class="logo-img" src="assets/img/oniicode-face.svg" alt="" />
+					<!-- <span class="logo-lnk">OniiCode</span> -->
+				</a>
+			</div>
 
-  <!-- about view -->
-  <div id="about" class="aboutWrapper .hide">
-  	<div class="about">
-  		<header id="myHeader" class="aboutHeader">
-  			<div style="flex-grow: 8">
-  				<img id="logoImage" src="assets/img/oniicode-face.svg" />
-  			</div>
-  			<div style="flex-grow: 2">
-  				<a onclick="changePage('portfolio')" class="portfolioBtn">
-			  		<span style="flex-grow: 10">SEE PORTFOLIO</span>
-			  	</a>
-  			</div>
-  		</header>
-  		<div style="height: 65px"></div>
-  		<div class="aboutImage"></div>
-  		<div style="height: 36px"></div>
-  		<span class="title">About Me (Introduction)</span>
-  		<p>My name is Peter Oniisha Peregbakumo, I’m experienced with all stages of the development cycle for dynamic web and mobile applications - having an in-depth knowledge in Flutter & Dart and also including advanced HTML5, CSS, JavaScript, PHP, and Laravel.</p>
+			<!-- menu button -->
+			<a href="#" class="menu-btn"><span></span></a>
+				
+			<!-- download cv button -->
+			<a href="https://oniicode.netlify.app/assets/docs/Resume-Peter-Onisha-Peregbakumo.pdf" target="_blank" class="btn download-cv-btn">
+				<span class="animated-button"><span>Download CV</span></span>
+				<i class="icon fas fa-download"></i>
+			</a>
 
-		<p>In addition to my Computer Science background, I also possess a strong background in management, leadership and on the design end of things; I’m very  familiar with design tools such as Figma, Adobe XD, and Photoshop.</p>
+			<!-- header sidebar -->
+			<div class="header-sidebar">
 
-		<p>In my free time, you would find me driving, swimming, playing table tennis or 8 ball pool with friends or making music… oh yeah! I make music, haha.</p>
+				<!-- top menu -->						
+				<div class="top-menu">
+					<div class="top-menu-nav">	
+						<div class="menu-topmenu-container">
+							<ul class="menu">
+								<li class="menu-item current-menu-item">
+									<a href="#section-started">
+										<span class="animated-button"><span>Home</span></span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#section-about">
+										<span class="animated-button"><span>About</span></span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#section-experience">
+										<span class="animated-button"><span>Resume</span></span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#section-portfolio">
+										<span class="animated-button"><span>Portfolio</span></span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#section-contacts">
+										<span class="animated-button"><span>Contact</span></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-		<div style="height: 20px"></div>
-  		<span class="title">Want to know more about my Experience, education and Companies I have worked with?</span>
-  		<p>Checkout my LinkedIn and Resume:</p>
-	  	<a href="https://www.linkedin.com/in/peter-onisha-peregbakumo-526a34152" target="_blank" class="letsTalk">Visit LinkedIn Profile</a>
-	  	<div style="height: 10px"></div>
-	  	<a href="assets/docs/Resume-Peter-Onisha-Peregbakumo.pdf"  target="_blank" class="letsTalk">View Resume/CV</a>
-  		<div style="height: 40px"></div>
+			</div>
 
-  	</div>
-  </div>
-  <!-- end of about view -->
+		</header>
+		
+		<!-- Wrapper -->
+		<div class="wrapper">
 
-  <!-- portfolio view -->
-  <div id="portfolio" class="aboutWrapper .hide">
-  	<div class="about">
-  		<header id="myHeader2" class="aboutHeader">
-  			<div style="flex-grow: 8">
-  				<img id="logoImage2" src="assets/img/oniicode-face.svg" />
-  			</div>
-  			<div style="flex-grow: 2">
-  				<a onclick="changePage('about')" class="portfolioBtn">
-			  		<span style="flex-grow: 10">ABOUT ME</span>
-			  	</a>
-  			</div>
-  		</header>
+			<!-- Background -->
+			<div class="background-bg">
+				<div class="background-filter gradient">
+					<div class="background-img" style="background-image: url(images/oniicode.jpg);"></div>
+				</div>
+			</div>
 
-  		<div style="height: 20px"></div>
+			<!-- Section Started -->
+			<div class="section started" id="section-started">
+				<div class="centrize full-width">
+					<div class="vertical-center">
 
-  		<div class="PortfolioCard">
-	  		<div class="portfolioImage" style="background-image: url('assets/img/learncode.jpg');"></div>
-	  		<div class="card-content">
-	  			<span class="portfolioTitle">UI to Flutter App</span>
-		  		<div style="height: 6px"></div>
-				<span class="portfolioDescriptionText">Came across this design by adecancode on Twitter and I implemented it using Flutter.</span>
-	  		</div>
-  		</div>
+						<!-- title -->
+						<h1 class="h-title">
+							OniiCode
+						</h1>
 
-  		<div style="height: 36px"></div>
-  		<div class="PortfolioCard">
-	  		<div class="portfolioImage" style="background-image: url('assets/img/houzhold.jpg');"></div>
-	  		<div class="card-content">
-	  			<span class="portfolioTitle">Household Mobile App</span>
-		  		<div style="height: 6px"></div>
-				<span class="portfolioDescriptionText">Developing a fully Interactive prototype for managing household debts and shopping Lists.</span>
-	  		</div>
-  		</div>
+						<!-- content started -->
+						<div class="started-content">
 
-  		<div style="height: 36px"></div>
-  		<div class="PortfolioCard">
-	  		<div class="portfolioImage" style="background-image: url('assets/img/learncode.jpg');"></div>
-	  		<div class="card-content">
-	  			<span class="portfolioTitle">UI to Flutter App</span>
-		  		<div style="height: 6px"></div>
-				<span class="portfolioDescriptionText">Came across this design by adecancode on Twitter and I implemented it using Flutter.</span>
-	  		</div>
-  		</div>
+							<!-- subtitle -->
+							<div class="h-subtitles">
+								<div class="h-subtitle typing-subtitle">
+									<p>Software Developer</p>
+									<p>Mobile Developer</p>
+									<p>Web Developer</p>
+									<p>Programmer</p>
+								</div>
+								<span class="typed-subtitle"></span>
+							</div>
 
-  		<div style="height: 36px"></div>
-  		<div class="PortfolioCard">
-	  		<div class="portfolioImage" style="background-image: url('assets/img/houzhold.jpg');"></div>
-	  		<div class="card-content">
-	  			<span class="portfolioTitle">Household Mobile App</span>
-		  		<div style="height: 6px"></div>
-				<span class="portfolioDescriptionText">Developing a fully Interactive prototype for managing household debts and shopping Lists.</span>
-	  		</div>
-  		</div>
+							<!-- text -->
+							<div class="h-text">
+								Hello! I am a mobile and web developer whose got passion and interest in solving African problems with technology. Open to contract, Part-time or Full-time opportunities.
+							</div>
+
+							<!-- button -->
+							<a href="#section-contacts" class="btn">
+								<span class="animated-button"><span>Contact Me</span></span>
+								<i class="icon fas fa-chevron-right"></i>
+							</a>
+
+							<!-- mosue button -->
+							<a href="#" class="btn mouse-btn" style="display: none;">
+								<i class="icon fas fa-chevron-down"></i>
+							</a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Section About -->
+			<div class="section about" id="section-about">
+				<div class="content">
+
+					<!-- title -->
+					<div class="titles">
+						<div class="title">About Me</div>
+						<div class="subtitle">My story</div>
+					</div>
+
+					<!-- text -->
+					<div class="cols">
+						<div class="col">
+							<div class="single-post-text">
+								<p>
+									My name is Peter Oniisha Peregbakumo, I’m experienced with all stages of the development cycle for dynamic web and mobile applications - having an in-depth knowledge in Flutter & Dart and also including advanced HTML5, CSS, JavaScript, PHP, and Laravel.
+								</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="single-post-text">
+								<p>
+									In addition to my Computer Science background, I also possess a strong background in management, leadership and on the design end of things; I’m very familiar with design tools such as Figma, Adobe XD, and Photoshop.
+								</p>
+							</div>
+						</div>
+						<div class="col col-full">
+							<div class="single-post-text">
+								<p>
+									In my free time, you would find me driving, swimming, playing table tennis or 8 ball pool with friends or making music… oh yeah! I make music, and you would always see me with my durag as on my photo here haha.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- info list -->
+					<div class="info-list">
+						<ul>
+							<li><strong>Age:</strong> 24</li>
+							<li><strong>Residence:</strong> NIGERIA</li>
+							<li><strong>Freelance:</strong> Available</li>
+							<li><strong>Address:</strong> Hahaha, Nigeria</li>
+							<li><strong>Phone:</strong> +234 904 546 5817</li>
+							<li><strong>E-mail:</strong> oniicoder@gmail.com</li>
+						</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<!-- Section Service -->
+			<div class="section service" id="section-services">
+				<div class="content">
+
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Services</div>
+						<div class="subtitle">What I Do</div>
+					</div>
+
+					<!-- services items -->
+					<div class="service-items">
+
+						<div class="service-col">
+							<div class="service-item">
+								<div class="icon"><i class="fas fa-mobile-alt"></i></div>
+								<div class="name">Android <br />Development</div>
+								<div class="single-post-text">
+									<p>
+										Stunning native android applications with Dart and Flutter cross platform development UI Kit.
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="service-col">
+							<div class="service-item">
+								<div class="icon"><i class="icon fas fa-mobile"></i></div>
+								<div class="name">iOS <br />Development</div>
+								<div class="single-post-text">
+									<p>
+										From design, implementation of native iOS apps, to submission into the Apple store.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item">
+								<div class="icon"><i class="icon fab fa-chrome"></i></div>
+								<div class="name">Static <br />& Dynamic Websites</div>
+								<div class="single-post-text">
+									<p>
+										The process includes: web design, web content, client-side / server-side scripting, authentication and network security configuration.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item">
+								<div class="icon"><i class="icon fas fa-brain"></i></div>
+								<div class="name">Research <br />& Brainstorimng</div>
+								<div class="single-post-text">
+									<p>
+										Got an idea and you want to see the feasibility into a product? Let me help you.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item">
+								<div class="icon"><i class="icon fas fa-brain"></i></div>
+								<div class="name">Algorithms <br />& Design Thinking</div>
+								<div class="single-post-text">
+									<p>
+										Got a plan and you need to optimize it? Want to develop an algorithm to solve a technical problem in programming or for your product?
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item">
+								<div class="icon"><i class="fas fa-comments"></i></div>
+								<div class="name">Chatbot <br />Development</div>
+								<div class="single-post-text">
+									<p>
+										Give your business that automated feel with amazing chatbots that are built specifically to converse with your potential customers and convert them into deals.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<!-- Section Resume -->
+			<div class="section resume" id="section-experience">
+				<div class="content">
+
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Experience</div>
+						<div class="subtitle">Working with</div>
+					</div>
+
+					<!-- resume items -->
+					<div class="content-carousel">
+						<div class="owl-carousel" data-slidesview="2" data-slidesview_mobile="1">
+
+							<div class="item">
+								<div class="resume-item active">
+									<div class="date">2018-2019</div>
+									<div class="name">Software Developer <br />Agrocenta</div>
+									<div class="single-post-text">
+										<p>
+											UI Design, UI implementation, Web application Development and cross-platform development.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="resume-item">
+									<div class="date">2017-2018</div>
+									<div class="name">Photography and Videography Intern <br />Lancaster</div>
+									<div class="single-post-text">
+										<p>
+											Photoshoot for online and printing campaigns, Event coverage, Video commercial productions for social media.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="resume-item">
+									<div class="date">2017</div>
+									<div class="name">Web Developer <br />iBrand Africa</div>
+									<div class="single-post-text">
+										<p>
+											Develop websites for clients (Both Frontend and Backend).
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="resume-item">
+									<div class="date">2017</div>
+									<div class="name">Remote Web Developer Intern <br />Hotels NG</div>
+									<div class="single-post-text">
+										<p>
+											Mockup Designs, Implement UI designs, worked on and developed APIs, Co-developed external projects.
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- navigation -->
+						<div class="navs">
+							<span class="prev fas fa-chevron-left"></span>
+							<span class="next fas fa-chevron-right"></span>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Section Resume -->
+			<div class="section resume" id="section-education">
+				<div class="content">
+
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Education</div>
+						<div class="subtitle">Studied at</div>
+					</div>
+
+					<!-- resume items -->
+					<div class="content-carousel">
+						<div class="owl-carousel" data-slidesview="2" data-slidesview_mobile="1">
+
+							<div class="item">
+								<div class="resume-item">
+									<div class="date">2020</div>
+									<div class="name">App Brewery <br /></div>
+									<div class="single-post-text">
+										<p>
+											Certified Flutter Developer - The App Brewery: cert_36phvx6c.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="resume-item active">
+									<div class="date">2015-2019</div>
+									<div class="name">Lancaster University <br />Ghana</div>
+									<div class="single-post-text">
+										<p>
+											Bsc. Hons in Computer Science with focus in Algorithms, Human-computer interactions, information systems and programming.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="resume-item">
+									<div class="date">2018</div>
+									<div class="name">IBM Cognitive Class, <br />IBM</div>
+									<div class="single-post-text">
+										<p>
+											Certificate in Data Science Methodology
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="resume-item">
+									<div class="date">2018</div>
+									<div class="name">Android Course <br />Udacity</div>
+									<div class="single-post-text">
+										<p>
+											Google Africa Scholarship for Android development and ceritfied Android developer.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="resume-item">
+									<div class="date">2015</div>
+									<div class="name">Web Design Course <br />Nigeria</div>
+									<div class="single-post-text">
+										<p>
+											Frontend, backend and graphics design.
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- navigation -->
+						<div class="navs">
+							<span class="prev fas fa-chevron-left"></span>
+							<span class="next fas fa-chevron-right"></span>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Section Design Skills -->
+			<div class="section skills" id="section-skills">
+				<div class="content">
+
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Design Skills</div>
+						<div class="subtitle">Creative ability</div>
+					</div>
+
+					<!-- skills items -->
+					<div class="skills percent">
+						<ul>
+							<li>
+								<div class="name">Figma & Adobe XD</div>
+								<div class="single-post-text">
+									<p>
+										Familiar with user interface design and user experience demonstration with effective tools designed for that purpose.
+									</p>
+								</div>
+								<div class="progress">
+									<div class="percentage" style="width: 95%;">
+										<span class="percent">95%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">Photoshop</div>
+								<div class="single-post-text">
+									<p>
+										Image manipulations and brand materials are very essential for businesses and unique brands that sell, I believe in unique and  graphics that communicate.
+									</p>
+								</div>
+								<div class="progress">
+									<div class="percentage" style="width: 95%;">
+										<span class="percent">95%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">UI Design</div>
+								<div class="single-post-text">
+									<p>
+										Beautiful and stunning user interfaces and experience for your users on your mobile and web apps/sites.
+									</p>
+								</div>
+								<div class="progress">
+									<div class="percentage" style="width: 90%;">
+										<span class="percent">90%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">UI Prototyping</div>
+								<div class="single-post-text">
+									<p>
+										Have a feel of what the end product would look like even before any code is written.
+									</p>
+								</div>
+								<div class="progress">
+									<div class="percentage" style="width: 85%;">
+										<span class="percent">85%</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Section Languages Skills -->
+			<div class="section skills" id="section-skills-lang">
+				<div class="content">
+
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Language Skills</div>
+						<div class="subtitle">Reading and writing</div>
+					</div>
+
+					<!-- skills items -->
+					<div class="skills dotted">
+						<ul>
+							<li>
+								<div class="name">English</div>
+								<div class="single-post-text">
+									<p>
+										Very proficient in reading, speaking and writing in English.
+									</p>
+								</div>
+								<div class="progress">
+									<div class="percentage" style="width: 100%;">
+										<span class="percent">100%</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Section Coding Skills -->
+			<div class="section skills" id="section-skills-code">
+				<div class="content">
+					
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Coding Skills</div>
+						<div class="subtitle">Developing on</div>
+					</div>
+
+					<!-- skills items-->
+					<div class="skills circles">
+						<ul>
+							<li>
+								<div class="progress p95"> <!-- p90 = 90% circle fill color -->
+									<div class="percentage"></div>
+									<span>95%</span>
+								</div>
+								<div class="name">Flutter, Dart</div>
+							</li>
+							<li>
+								<div class="progress p90"> <!-- p75 = 75% circle fill color -->
+									<div class="percentage"></div>
+									<span>90%</span>
+								</div>
+								<div class="name">PHP, MYSQL, LARAVEL</div>
+							</li>
+							<li>
+								<div class="progress p85"> <!-- p85 = 85% circle fill color -->
+									<div class="percentage"></div>
+									<span>85%</span>
+								</div>
+								<div class="name">JavaScript</div>
+							</li>
+							<li>
+								<div class="progress p85"> <!-- p80 = 80% circle fill color -->
+									<div class="percentage"></div>
+									<span>85%</span>
+								</div>
+								<div class="name">VueJS</div>
+							
+							</li>
+							<li>
+								<div class="progress p99"> <!-- p95 = 95% circle fill color -->
+									<div class="percentage"></div>
+									<span>99%</span>
+								</div>
+								<div class="name">HTML, CSS</div>
+							</li>
+							<li>
+								<div class="progress p80"> <!-- p90 = 90% circle fill color -->
+									<div class="percentage"></div>
+									<span>80%</span>
+								</div>
+								<div class="name">JAVA</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			
+
+			<!-- Works -->
+			<div class="section works" id="section-portfolio">
+				<div class="content">
+
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Portfolio</div>
+						<div class="subtitle">Latest works</div>
+					</div>
+
+					<!-- filter -->
+					<div class="filter-menu">
+						<div class="filters">
+							<div class="btn-group">
+								<label data-text="All" class="glitch-effect">
+									<input type="radio" name="fl_radio" value=".box-col" />All
+								</label>
+							</div>
+							<div class="btn-group">
+								<label data-text="Mobile">
+									<input type="radio" name="fl_radio" value=".f-mobile" />Mobile
+								</label>
+							</div>
+							<div class="btn-group">
+								<label data-text="Web">
+									<input type="radio" name="fl_radio" value=".f-web" />Web
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- portfolio items -->
+					<div class="box-items">
+						<div class="box-col f-mobile">
+							<div class="box-item">
+								<div class="image">
+									<a href="#popup-1" class="has-popup-media">
+										<img src="images/works/paperlyft.jpg" alt="" />
+										<span class="info">
+											<span class="centrize full-width">
+												<span class="vertical-center">
+													<i class="icon fas fa-plus"></i>
+												</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="desc">
+									<div class="category">Mobile</div>
+									<a href="#popup-1" class="name has-popup-media">PaperLyft App</a>
+								</div>
+								<div id="popup-1" class="popup-box mfp-fade mfp-hide">
+									<div class="content">
+										<div class="image">
+											<img src="images/works/paperlyft.jpg" alt="">
+										</div>
+										<div class="desc">
+											<div class="category">Mobile</div>
+											<h4>PaperLyft App</h4>
+											<p>
+												Your one stop for extracting textual contents from any printed media including and not limited to documents, newspapers, business cards, vouchers, receipts, bank issued cards (it’s a criminal offense to use on someone else’s card), billboards, flyers etc.
+											</p>
+											<a href="https://twitter.com/oniicode/status/1262833143775670273?s=20" target="_blank" class="btn">
+												<span class="animated-button"><span>View Demo</span></span>
+												<i class="icon fas fa-chevron-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-col f-mobile">
+							<div class="box-item">
+								<div class="image">
+									<a href="#popup-2" class="has-popup-media">
+										<img src="images/works/rambonews.jpg" alt="" />
+										<span class="info">
+											<span class="centrize full-width">
+												<span class="vertical-center">
+													<i class="icon fas fa-plus"></i>
+												</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="desc">
+									<div class="category">Mobile</div>
+									<a href="#popup-2" class="name has-popup-media">RamboNews App</a>
+								</div>
+								<div id="popup-2" class="popup-box mfp-fade mfp-hide">
+									<div class="content">
+										<div class="image">
+											<img src="images/works/rambonews.jpg" alt="">
+										</div>
+										<div class="desc">
+											<div class="category">Mobile</div>
+											<h4>RamboNews App</h4>
+											<p>
+												After studying my Dad’s browsing patterns and frustration from tracking his news sources I decided to make him an app that shows him the latest news from his preferred sources all together in one place, so he doesn’t have to fight with his browser all the time.
+											</p>
+											<a href="https://twitter.com/oniicode/status/1261655692508872706?s=20" target="_blank" class="btn">
+												<span class="animated-button"><span>View Demo</span></span>
+												<i class="icon fas fa-chevron-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-col f-mobile">
+							<div class="box-item">
+								<div class="image">
+									<a href="#popup-3" class="has-popup-media">
+										<img src="images/works/okra.jpg" alt="" />
+										<span class="info">
+											<span class="centrize full-width">
+												<span class="vertical-center">
+													<i class="icon fas fa-plus"></i>
+												</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="desc">
+									<div class="category">Mobile</div>
+									<a href="#popup-3" class="name has-popup-media">OkraMoney UI Implementation</a>
+								</div>
+								<div id="popup-3" class="popup-box mfp-fade mfp-hide">
+									<div class="content">
+										<div class="image">
+											<img src="images/works/okra.jpg" alt="">
+										</div>
+										<div class="desc">
+											<div class="category">Mobile</div>
+											<h4>OkraMoney UI Implementation</h4>
+											<p>
+												Implemented and proposed a demo of the OkraMoney education and transactions pages for their mobile app.
+											</p>
+											<a href="https://twitter.com/oniicode/status/1262114139104669696?s=20" target="_blank" class="btn">
+												<span class="animated-button"><span>View Demo</span></span>
+												<i class="icon fas fa-chevron-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-col f-mobile">
+							<div class="box-item">
+								<div class="image">
+									<a href="#popup-4" class="has-popup-media">
+										<img src="images/works/cards.jpg" alt="" />
+										<span class="info">
+											<span class="centrize full-width">
+												<span class="vertical-center">
+													<i class="icon fas fa-plus"></i>
+												</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="desc">
+									<div class="category">Mobile</div>
+									<a href="#popup-4" class="name has-popup-media">Card Subscription App</a>
+								</div>
+								<div id="popup-4" class="popup-box mfp-fade mfp-hide">
+									<div class="content">
+										<div class="image">
+											<img src="images/works/cards.jpg" alt="">
+										</div>
+										<div class="desc">
+											<div class="category">Mobile</div>
+											<h4>Card Subscription App</h4>
+											<p>
+												Imagine keeping track of all the sites your bank card is registered to for auto renewals and easily cancel as of when you want.
+											</p>
+											<a href="https://twitter.com/oniicode/status/1263217606997299202?s=20" target="_blank" class="btn">
+												<span class="animated-button"><span>View Demo</span></span>
+												<i class="icon fas fa-chevron-right"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of portfolio items -->
 
 
-  		
 
-  	</div>
-  </div>
-  <!-- end of portfolio view -->
+					<div class="clear"></div>
+				</div>
+			</div>
 
+			<!-- Section Contacts Info >-->
+			<div class="section contacts" id="section-contacts">
+				<div class="content">
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script type="text/javascript" src="assets/app.js"></script>
+					<!-- title -->
+					<div class="titles">
+						<div class="title">Contact</div>
+						<div class="subtitle">Let's talk</div>
+					</div>
+
+					<!-- contact form -->
+					<div class="contact-form">
+						<form action="https://formspree.io/meqreyny" method="post">
+							<div class="group-val">
+								<div class="label">Full name <strong>*</strong></div>
+   								<input type="text" name="name" placeholder="eg.: John Doe" />
+							</div>
+							<div class="group-val">
+								<div class="label">Email address <strong>*</strong></div>
+								<input type="email" name="_replyto" placeholder="example@domain.com" />
+							</div>
+							<div class="group-val">
+								<div class="label">Message <strong>*</strong></div>
+								<textarea name="message" placeholder="Your message"></textarea>
+							</div>
+							<div class="group-bts">
+								<button type="submit" class="btn">
+									<span class="animated-button"><span>Send Message</span></span>
+									<i class="icon fas fa-chevron-right"></i>
+								</button>
+							</div>
+						</form>
+						<div class="alert-success">
+							<p>Thanks, your message is sent successfully.</p>
+						</div>
+					</div>
+
+					<!-- contact info -->
+					<div class="contact-info">
+						<div class="name">OniiCode</div>
+						<div class="subname">Mobile & Web Developer</div>
+						<div class="info-list">
+							<ul>
+								<li><strong>Age:</strong> 24</li>
+								<li><strong>Residence:</strong> Nigeria</li>
+								<li><strong>Freelance:</strong> Available</li>
+								<li><strong>Phone:</strong> +234 904 546 5817</li>
+								<li><strong>E-mail:</strong> perezpeter32@gmail.com</li>
+							</ul>
+						</div>
+						<div class="author">OniiCode</div>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="socials">
+				<!-- <a target="_blank" href="https://www.facebook.com/">
+					<i class="icon fab fa-facebook-f"></i>
+				</a> -->
+				<a target="_blank" href="https://www.twitter.com/oniicode">
+					<i class="icon fab fa-twitter"></i>
+				</a>
+				<!-- <a target="_blank" href="https://dribbble.com/">
+					<i class="icon fab fa-dribbble"></i>
+				</a> -->
+			</div>
+		</footer>
+		
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/magnific-popup.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/jarallax.js"></script>
+	<!-- <script src="js/jarallax-video.js"></script> -->
+	<script src="js/jarallax-element.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/scripts.min.js"></script>
 
 </body>
-
-
 </html>
+<!-- Localized -->
